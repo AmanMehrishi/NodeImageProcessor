@@ -6,6 +6,8 @@
         "xhash": "cpp",
         "xlocinfo": "cpp",
         "xtree": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }

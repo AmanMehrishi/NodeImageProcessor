@@ -2,12 +2,20 @@ cmake_minimum_required(VERSION 3.10)
 project(NodeBasedImageProcessor)
 
 set(CMAKE_CXX_STANDARD 17)
-set(SOURCE_FILES src/main.cpp src/other_module.cpp)  
 
 include_directories(include)
 
-add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+set(SOURCES
+    src/main.cpp
+    src/ImageInputNode.cpp
+    src/EdgeDetectionNode.cpp
+    src/OutputNode.cpp
+)
 
-install(FILES "opencv2/opencv.hpp"
-    DESTINATION ${OPENCV_INCLUDE_INSTALL_PATH}/opencv2
-    COMPONENT dev)
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+find_package(OpenCV REQUIRED)
+if(OpenCV_FOUND)
+  target_include_directories(${PROJECT_NAME} PUBLIC ${OpenCV_INCLUDE_DIRS})
+  target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+endif()
