@@ -3,6 +3,8 @@ project(NodeBasedImageProcessor)
 
 set(CMAKE_CXX_STANDARD 17)
 
+set(OpenCV_DIR "D:/opencv/build/x64/vc16/lib")
+
 include_directories(include)
 
 set(SOURCES
