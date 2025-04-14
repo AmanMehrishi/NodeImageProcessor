@@ -13,14 +13,17 @@ void ColorChannelSplitterNode::process(){
     vector<cv::Mat> channelImages;
     for(auto& ch:channels)
     {
-        cv::Mat color;
-        cv::cvtColor(ch, color, cv::COLOR_GRAY2BGR);
-        channelImages.push_back(color);
+        if(!greyscale && input.channels() == 3)
+        {
+            cv::Mat color;
+            cv::cvtColor(ch, color, cv::COLOR_GRAY2BGR);
+            ch = color;
+        }
     }
-    if(channelImages.size() > 1)
-        cv::hconcat(channelImages,output);
-    else
-        output = channelImages[0];
+    if(!channels.empty())
+    {
+        cv::hconcat(channels, output);
+    }
     
     cout<<"ColorChannelSplit: Successfully split images into"<< channels.size() << " channels"<< endl;
 }
