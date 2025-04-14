@@ -40,4 +40,5 @@ void EdgeDetectionNode::process() {
         cv::addWeighted(input, 0.7, edgeColor, 0.3, 0, output);
         cout<<"Overlayed edges on original image." << endl;
     }
+    else{output = edges;}
 }
