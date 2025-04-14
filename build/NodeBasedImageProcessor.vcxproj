@@ -419,8 +419,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\Mixar-Project\src\BrightnessContrastNode.cpp" />
     <ClCompile Include="D:\Mixar-Project\src\EdgeDetectionNode.cpp" />
     <ClCompile Include="D:\Mixar-Project\src\OutputNode.cpp" />
+    <ClCompile Include="D:\Mixar-Project\src\BlurNode.cpp" />
+    <ClCompile Include="D:\Mixar-Project\src\NodeItem.cpp" />
     <ClCompile Include="D:\Mixar-Project\src\NodeGraph.cpp" />
     <ClInclude Include="D:\Mixar-Project\include\MainWindow.h" />
+    <ClInclude Include="D:\Mixar-Project\include\NodeGraph.h" />
     <ClCompile Include="D:\Mixar-Project\build\NodeBasedImageProcessor_autogen\mocs_compilation_Release.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>

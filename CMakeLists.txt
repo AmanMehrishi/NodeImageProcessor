@@ -4,7 +4,7 @@ project(NodeBasedImageProcessor)
 set(CMAKE_CXX_STANDARD 17)
 
 if (MSVC)
-    add_compile_options(/permissive- /Zc:__cplusplus)
+    add_compile_options(/Zc:__cplusplus)
 endif()
 
 set(CMAKE_DISABLE_FIND_PACKAGE_Vulkan TRUE)
@@ -15,7 +15,7 @@ set(Qt6_DIR "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6")
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
-find_package(Qt6 6.9 REQUIRED COMPONENTS Core Widgets)
+find_package(Qt6 6 REQUIRED COMPONENTS Core Widgets Gui)
 find_package(OpenCV REQUIRED)
 
 qt_standard_project_setup()
@@ -28,8 +28,10 @@ set(SOURCES
     ${CMAKE_SOURCE_DIR}/src/EdgeDetectionNode.cpp
     ${CMAKE_SOURCE_DIR}/src/OutputNode.cpp
     ${CMAKE_SOURCE_DIR}/src/BlurNode.cpp
+    ${CMAKE_SOURCE_DIR}/src/NodeItem.cpp
     ${CMAKE_SOURCE_DIR}/src/NodeGraph.cpp
     ${CMAKE_SOURCE_DIR}/include/MainWindow.h
+    ${CMAKE_SOURCE_DIR}/include/NodeGraph.h
 )
 
 qt_add_executable(${PROJECT_NAME} WIN32 ${SOURCES})

@@ -46,6 +46,7 @@ D:/Mixar-Project/build/NodeBasedImageProcessor_autogen/include_Debug/6YEA5652QU/
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qglobalstatic.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qhash.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qhashfunctions.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qiodevice.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qiodevicebase.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qiterable.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qiterator.h \
@@ -117,6 +118,7 @@ D:/Mixar-Project/build/NodeBasedImageProcessor_autogen/include_Debug/6YEA5652QU/
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qtversionchecks.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qtypeinfo.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qtypes.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qurl.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qutf8stringview.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qvariant.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtCore/qvarlengtharray.h \
@@ -138,23 +140,36 @@ D:/Mixar-Project/build/NodeBasedImageProcessor_autogen/include_Debug/6YEA5652QU/
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qpaintdevice.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qpalette.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qpen.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qpicture.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qpixelformat.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qpixmap.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qpolygon.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qregion.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qrgb.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qrgba64.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qtextdocument.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qtgui-config.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qtguiexports.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qtguiglobal.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qtransform.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qwindowdefs.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtGui/qwindowdefs_win.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/QDockWidget \
   D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/QGraphicsScene \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/QLabel \
   D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/QMainWindow \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/QPushButton \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/QSlider \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qabstractbutton.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qabstractslider.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qdockwidget.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qframe.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qgraphicsscene.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qlabel.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qmainwindow.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qpushbutton.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qsizepolicy.h \
+  D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qslider.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qtabwidget.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qtwidgets-config.h \
   D:/Qt2/6.10.0/msvc2022_64/include/QtWidgets/qtwidgetsexports.h \

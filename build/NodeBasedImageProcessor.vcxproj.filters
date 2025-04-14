@@ -22,6 +22,12 @@
     <ClCompile Include="D:\Mixar-Project\src\OutputNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Mixar-Project\src\BlurNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Mixar-Project\src\NodeItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\Mixar-Project\src\NodeGraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -37,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D:\Mixar-Project\include\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Mixar-Project\include\NodeGraph.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

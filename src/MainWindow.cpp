@@ -6,25 +6,21 @@
 #include <QStatusBar>
 #include <QDockWidget>
 #include <QFormLayout>
-#include <QLabel>
-#include <QSlider>
-#include <QPushButton>
-#include <QAction>
 #include <QFileDialog>
 #include <QMessageBox>
+#include "NodeItem.h" 
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
     QWidget *centralWidget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(centralWidget);
-    scene = new QGraphicsScene(this);
-    QGraphicsView *view = new QGraphicsView(scene, this);
+    m_scene = new QGraphicsScene(this);
+    QGraphicsView *view = new QGraphicsView(m_scene, this);
     view->setRenderHint(QPainter::Antialiasing);
     view->setDragMode(QGraphicsView::RubberBandDrag);
     layout->addWidget(view);
     setCentralWidget(centralWidget);
-
 
     createMenu();
     createPropertiesPanel();
@@ -32,10 +28,10 @@ MainWindow::MainWindow(QWidget *parent)
     statusBar()->showMessage("Ready");
 }
 
-MainWindow::~MainWindow() { }
+MainWindow::~MainWindow() {}
 
 void MainWindow::createMenu(){
-    QMenu *fileMenu = menuBar() -> addMenu("File");
+    QMenu *fileMenu = menuBar()->addMenu("File");
 
     QAction *openAct = new QAction("Open Image", this);
     QAction *saveAct = new QAction("Save Image", this);
@@ -44,42 +40,63 @@ void MainWindow::createMenu(){
     fileMenu->addAction(saveAct);
 
     connect(openAct, &QAction::triggered, [this](){
-        QString filename = QFileDialog::getOpenFileName(this, "Open Image", "", "Images (*.png *.jpg *bmp)");
-        if(!filename.isEmpty())
-        {
-            QMessageBox::information(this, "Open", "Image opened: "+filename);
+        QString fileName = QFileDialog::getOpenFileName(this, "Open Image", "", "Images (*.png *.jpg *.bmp)");
+        if(!fileName.isEmpty()){
+            QMessageBox::information(this, "Open", "Image opened: " + fileName);
         }
     });
     connect(saveAct, &QAction::triggered, [this](){
-        QString filename = QFileDialog::getSaveFileName(this, "Save Image", "", "Images (*.png *.jpg *bmp)");
-        if(!filename.isEmpty())
-        {
-            QMessageBox::information(this, "Save", "Result saved to: "+filename);
+        QString fileName = QFileDialog::getSaveFileName(this, "Save Image", "", "Images (*.png *.jpg *.bmp)");
+        if(!fileName.isEmpty()){
+            QMessageBox::information(this, "Save", "Result saved to: " + fileName);
         }
     });
 }
 
 void MainWindow::createPropertiesPanel(){
-    QDockWidget *propertiesDock = new QDockWidget("Properties", this);
-    propertiesWidget = new QWidget(propertiesDock);
+    m_propertiesDock = new QDockWidget("Properties", this);
+    m_propertiesWidget = new QWidget(m_propertiesDock);
 
-    QFormLayout *formLayout = new QFormLayout(propertiesWidget);
+    QFormLayout *formLayout = new QFormLayout(m_propertiesWidget);
     
-    QLabel *nodeNameLabel = new QLabel("No node selected", propertiesWidget);
-    formLayout->addRow("Node", nodeNameLabel);
+    m_nodeNameLabel = new QLabel("No node selected", m_propertiesWidget);
+    formLayout->addRow("Node", m_nodeNameLabel);
     
-    QSlider *brightnessSlider = new QSlider(Qt::Horizontal, propertiesWidget);
-    brightnessSlider->setRange(-100, 100);
-    formLayout->addRow("Brightness", brightnessSlider);
+    m_brightnessSlider = new QSlider(Qt::Horizontal, m_propertiesWidget);
+    m_brightnessSlider->setRange(-100, 100);
+    formLayout->addRow("Brightness", m_brightnessSlider);
     
-    QSlider *contrastSlider = new QSlider(Qt::Horizontal, propertiesWidget);
-    contrastSlider->setRange(0, 300); 
-    formLayout->addRow("Contrast", contrastSlider);
-    
-    QPushButton *resetButton = new QPushButton("Reset", propertiesWidget);
-    formLayout->addRow(resetButton);
+    m_contrastSlider = new QSlider(Qt::Horizontal, m_propertiesWidget);
 
-    propertiesWidget->setLayout(formLayout);
-    propertiesDock->setWidget(propertiesWidget);
-    addDockWidget(Qt::RightDockWidgetArea, propertiesDock);
+    m_contrastSlider->setRange(0, 300); 
+    m_contrastSlider->setValue(100); 
+    formLayout->addRow("Contrast", m_contrastSlider);
+    
+    m_resetButton = new QPushButton("Reset", m_propertiesWidget);
+    formLayout->addRow(m_resetButton);
+
+    m_propertiesWidget->setLayout(formLayout);
+    m_propertiesDock->setWidget(m_propertiesWidget);
+    addDockWidget(Qt::RightDockWidgetArea, m_propertiesDock);
+
+    connect(m_scene, &QGraphicsScene::selectionChanged, this, &MainWindow::updatePropertiesPanel);
+
+    connect(m_resetButton, &QPushButton::clicked, [this](){
+        m_brightnessSlider->setValue(0);
+        m_contrastSlider->setValue(100);
+    });
+}
+
+void MainWindow::updatePropertiesPanel(){
+    auto selectedItems = m_scene->selectedItems();
+    if (!selectedItems.isEmpty()) {
+        NodeItem *nodeItem = dynamic_cast<NodeItem*>(selectedItems.first());
+        if (nodeItem) {
+            m_nodeNameLabel->setText("Selected: " + nodeItem->getTitle());
+        }
+    } else {
+        m_nodeNameLabel->setText("No node selected");
+        m_brightnessSlider->setValue(0);
+        m_contrastSlider->setValue(100);
+    }
 }

@@ -10,6 +10,8 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "filesystem": "cpp",
-        "memory": "cpp"
+        "memory": "cpp",
+        "iosfwd": "cpp",
+        "xlocbuf": "cpp"
     }
 }
