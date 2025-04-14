@@ -14,7 +14,10 @@ public:
     QGraphicsScene* getScene() { return scene; }
 
 private:
+    void createMenu();
+    void createPropertiesPanel();
     QGraphicsScene* scene;
+    QWidget *propertiesWidget;
 };
 
 #endif 

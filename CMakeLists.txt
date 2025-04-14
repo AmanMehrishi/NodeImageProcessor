@@ -27,6 +27,7 @@ set(SOURCES
     ${CMAKE_SOURCE_DIR}/src/BrightnessContrastNode.cpp
     ${CMAKE_SOURCE_DIR}/src/EdgeDetectionNode.cpp
     ${CMAKE_SOURCE_DIR}/src/OutputNode.cpp
+    ${CMAKE_SOURCE_DIR}/src/BlurNode.cpp
     ${CMAKE_SOURCE_DIR}/src/NodeGraph.cpp
     ${CMAKE_SOURCE_DIR}/include/MainWindow.h
 )

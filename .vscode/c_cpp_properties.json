@@ -7,7 +7,8 @@
                 "D:/opencv/build/include",
                 "D:/",
                 "D:/Qt/6.9.0/mingw_64/include/QtWidgets",
-                "D:/Qt/6.9.0/mingw_64/include"
+                "D:/Qt/6.9.0/mingw_64/include",
+                "D:/Qt2/6.10.0/msvc2022_64/include/QtGui"
             ],
             "defines": [
                 "_DEBUG",
