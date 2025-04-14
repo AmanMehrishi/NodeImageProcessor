@@ -26,11 +26,10 @@ int main(int argc, char *argv[]) {
         inputNode->setImagePath("resources/test.jpg");
         graph.addNode(inputNode);
 
-        // auto bcNode = make_shared<BrightnessContrastNode>("brightness_contrast_node");
-        // bcNode->setInput(inputNode->getOutput());
-        // bcNode->setBrightness(30);
-        // bcNode->setContrast(1.1);
-        // graph.addNode(bcNode);
+        auto bcNode = make_shared<BrightnessContrastNode>("brightness_contrast_node");
+        bcNode->setBrightness(30);
+        bcNode->setContrast(1.1);
+        graph.addNode(bcNode);
 
         // auto edgeNode = make_shared<EdgeDetectionNode>("edge_detection_node");
         // edgeNode->setInput(bcNode->getOutput());
@@ -50,19 +49,22 @@ int main(int argc, char *argv[]) {
         graph.processAll();
 
         
-        // if (!std::filesystem::exists("output")) {
-        //     std::filesystem::create_directory("output");
-        // }
+        if (!std::filesystem::exists("output")) {
+            std::filesystem::create_directory("output");
+        }
 
         NodeItem *inputItem = new NodeItem(QString::fromStdString(inputNode->getId()));
         inputItem->setPreview(inputNode->getOutput());
         inputItem->setPos(50, 50);
         scene->addItem(inputItem);
+        inputItem->setNode(inputNode.get());
 
-        // NodeItem *bcItem = new NodeItem(QString::fromStdString(bcNode->getId()));
-        // bcItem->setPreview(bcNode->getOutput());
-        // bcItem->setPos(250, 50);
-        // scene->addItem(bcItem);
+        NodeItem *bcItem = new NodeItem(QString::fromStdString(bcNode->getId()));
+        bcItem->setPreview(bcNode->getOutput());
+        bcItem->setPos(250, 50);
+        bcItem->setNode(bcNode.get());
+        scene->addItem(bcItem);
+
 
         // NodeItem *edgeItem = new NodeItem(QString::fromStdString(edgeNode->getId()));
         // edgeItem->setPreview(edgeNode->getOutput());
@@ -73,6 +75,7 @@ int main(int argc, char *argv[]) {
         // outputItem->setPreview(outputNode->getOutput());
         // outputItem->setPos(650, 50);
         // scene->addItem(outputItem);
+
 
         cout << "COMPLETE" << endl;
 

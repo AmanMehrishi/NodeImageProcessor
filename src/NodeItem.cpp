@@ -7,7 +7,7 @@
 #include <iostream>
 
 NodeItem::NodeItem(const QString &title, QGraphicsItem *parent)
-    : QGraphicsItem(parent), m_title(title), m_hasPreview(false)
+    : QGraphicsItem(parent), m_title(title), m_hasPreview(false), m_node(nullptr)
 {
     setFlags(QGraphicsItem::ItemIsMovable |
         QGraphicsItem::ItemIsSelectable |
@@ -46,7 +46,7 @@ void NodeItem::setPreview(const cv::Mat &image) {
         m_preview = QPixmap::fromImage(qimgCopy.scaled(130, 60, Qt::KeepAspectRatio, Qt::SmoothTransformation));
         
         m_hasPreview = true;
-        update();
+        
     } catch (const std::exception &ex) {
         std::cerr << "NodeItem::setPreview caught exception: " << ex.what() << std::endl;
         m_hasPreview = false;
@@ -54,6 +54,7 @@ void NodeItem::setPreview(const cv::Mat &image) {
         std::cerr << "NodeItem::setPreview caught an unknown exception." << std::endl;
         m_hasPreview = false;
     }
+    update();
 }
 
 void NodeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) {
@@ -65,6 +66,7 @@ void NodeItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, 
     if (option->state & QStyle::State_Selected) {
         QPen pen(Qt::yellow, 3);
         painter->setPen(pen);
+        painter->drawRoundedRect(boundingRect(), 10, 10);
     } else {
         painter->setPen(Qt::black);
     }

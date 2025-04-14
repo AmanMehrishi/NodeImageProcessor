@@ -15,6 +15,8 @@ class ImageInputNode : public Node {
         cv::Mat getOutput() const  {return output;}
 
         virtual void process() override;
+
+        string getMetadata() const;
     
     private:
         string imagePath;

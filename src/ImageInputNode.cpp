@@ -25,3 +25,21 @@ void ImageInputNode::process(){
     filesystem::path p(imagePath);
     cout<<" - Format: "<<p.extension().string()<<endl;
 }
+
+std::string ImageInputNode::getMetadata() const {
+    if (output.empty())
+        return "No image loaded.";
+    
+    std::string meta;
+    meta += "Path: " + imagePath + "\n";
+    meta += "Dimensions: " + std::to_string(output.cols) + " x " + std::to_string(output.rows) + "\n";
+    try {
+        auto size = filesystem::file_size(imagePath);
+        meta += "File Size: " + std::to_string(size) + " bytes\n";
+    } catch (...) {
+        meta += "File Size: N/A\n";
+    }
+    filesystem::path p(imagePath);
+    meta += "Format: " + p.extension().string();
+    return meta;
+}
