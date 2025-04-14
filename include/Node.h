@@ -12,6 +12,8 @@ class Node{
         Node(const string& id) : id(id) {}
         virtual ~Node() {}
         virtual void process() = 0;
+        virtual void setInput(const cv::Mat& in) { }
+        virtual cv::Mat getOutput() const { return cv::Mat(); }
         string getId() const {return id;}
 
         

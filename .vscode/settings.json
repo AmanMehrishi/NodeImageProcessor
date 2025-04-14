@@ -9,6 +9,7 @@
         "xutility": "cpp",
         "iostream": "cpp",
         "ostream": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "memory": "cpp"
     }
 }

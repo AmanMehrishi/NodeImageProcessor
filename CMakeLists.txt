@@ -7,17 +7,20 @@ set(OpenCV_DIR "D:/opencv/build/x64/vc16/lib")
 
 include_directories(include)
 
+
 set(SOURCES
     src/main.cpp
     src/ImageInputNode.cpp
-    src/EdgeDetectionNode.cpp
     src/OutputNode.cpp
+    src/BrightnessContrastNode.cpp
+    src/EdgeDetectionNode.cpp
+    src/NodeGraph.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 find_package(OpenCV REQUIRED)
 if(OpenCV_FOUND)
-  target_include_directories(${PROJECT_NAME} PUBLIC ${OpenCV_INCLUDE_DIRS})
-  target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+    target_include_directories(${PROJECT_NAME} PUBLIC ${OpenCV_INCLUDE_DIRS})
+    target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
 endif()
