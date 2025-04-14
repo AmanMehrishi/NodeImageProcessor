@@ -16,6 +16,8 @@ public:
     void setBrightness(int b) { brightness = b; }
     void setContrast(double c) { contrast = c; }
 
+    void reset() {brightness = 0; contrast = 1.0;}
+
     virtual void process() override;
 
 private:
