@@ -19,7 +19,7 @@ public:
 
 private:
     cv::Mat input;
-    std::string outputPath;
+    string outputPath;
 };
 
 

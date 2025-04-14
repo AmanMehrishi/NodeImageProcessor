@@ -10,6 +10,7 @@ void ImageInputNode::process(){
     if(output.empty())
     {
         cerr << "Failed to load image" << imagePath << endl;
+        cin.get();
     }else {
         cout<<"Loaded Image: "<< imagePath <<endl;
     }

@@ -1,14 +1,19 @@
 #include <iostream>
+#include <filesystem>
 #include "ImageInputNode.h"
 #include "EdgeDetectionNode.h"
 #include "OutputNode.h"
 
+
+
 int main() {
+    cout<<"Current Working Directory" << filesystem::current_path() <<endl;
+
     ImageInputNode inputNode("input_node");
     EdgeDetectionNode edgeNode("edge_detection_node");
     OutputNode outputNode("output_node");
 
-    inputNode.setImagePath("resources/test.jpg"); 
+    inputNode.setImagePath("D:/MIXAR-PROJECT/resources/test.jpg"); 
     inputNode.process();
 
     edgeNode.setInput(inputNode.getOutput());
