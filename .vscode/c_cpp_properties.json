@@ -4,7 +4,10 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/opencv/build/include"
+                "D:/opencv/build/include",
+                "D:/",
+                "D:/Qt/6.9.0/mingw_64/include/QtWidgets",
+                "D:/Qt/6.9.0/mingw_64/include"
             ],
             "defines": [
                 "_DEBUG",

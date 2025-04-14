@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.4.0+18d5aef85 for .NET Framework
-      Build started 14-04-2025 04:09:48.
+      Build started 14-04-2025 19:33:45.
       Project "D:\\Mixar-Project\\build\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -50,7 +50,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.18
+      Time Elapsed 00:00:00.83
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -76,7 +76,7 @@ events:
       The output was:
       0
       MSBuild version 17.4.0+18d5aef85 for .NET Framework
-      Build started 14-04-2025 04:09:50.
+      Build started 14-04-2025 19:33:46.
       Project "D:\\Mixar-Project\\build\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
@@ -102,7 +102,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.91
+      Time Elapsed 00:00:00.60
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -121,47 +121,47 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7mtu3n"
-      binary: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7mtu3n"
+      source: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-vrsf3j"
+      binary: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-vrsf3j"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7mtu3n'
+        Change Dir: 'D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-vrsf3j'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_507bf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e9b2e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.4.0+18d5aef85 for .NET Framework
-        Build started 14-04-2025 04:09:52.
-        Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mtu3n\\cmTC_507bf.vcxproj" on node 1 (default targets).
+        Build started 14-04-2025 19:33:47.
+        Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vrsf3j\\cmTC_e9b2e.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_507bf.dir\\Debug\\".
-          Creating directory "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mtu3n\\Debug\\".
-          Creating directory "cmTC_507bf.dir\\Debug\\cmTC_507bf.tlog\\".
+          Creating directory "cmTC_e9b2e.dir\\Debug\\".
+          Creating directory "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vrsf3j\\Debug\\".
+          Creating directory "cmTC_e9b2e.dir\\Debug\\cmTC_e9b2e.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_507bf.dir\\Debug\\cmTC_507bf.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_e9b2e.dir\\Debug\\cmTC_e9b2e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_507bf.dir\\Debug\\\\" /Fd"cmTC_507bf.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e9b2e.dir\\Debug\\\\" /Fd"cmTC_e9b2e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31933 for x64
           CMakeCCompilerABI.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_507bf.dir\\Debug\\\\" /Fd"cmTC_507bf.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e9b2e.dir\\Debug\\\\" /Fd"cmTC_e9b2e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mtu3n\\Debug\\cmTC_507bf.exe" /INCREMENTAL /ILK:"cmTC_507bf.dir\\Debug\\cmTC_507bf.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7mtu3n/Debug/cmTC_507bf.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7mtu3n/Debug/cmTC_507bf.lib" /MACHINE:X64  /machine:x64 cmTC_507bf.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_507bf.vcxproj -> D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mtu3n\\Debug\\cmTC_507bf.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vrsf3j\\Debug\\cmTC_e9b2e.exe" /INCREMENTAL /ILK:"cmTC_e9b2e.dir\\Debug\\cmTC_e9b2e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-vrsf3j/Debug/cmTC_e9b2e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-vrsf3j/Debug/cmTC_e9b2e.lib" /MACHINE:X64  /machine:x64 cmTC_e9b2e.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_e9b2e.vcxproj -> D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vrsf3j\\Debug\\cmTC_e9b2e.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_507bf.dir\\Debug\\cmTC_507bf.tlog\\unsuccessfulbuild".
-          Touching "cmTC_507bf.dir\\Debug\\cmTC_507bf.tlog\\cmTC_507bf.lastbuildstate".
-        Done Building Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7mtu3n\\cmTC_507bf.vcxproj" (default targets).
+          Deleting file "cmTC_e9b2e.dir\\Debug\\cmTC_e9b2e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_e9b2e.dir\\Debug\\cmTC_e9b2e.tlog\\cmTC_e9b2e.lastbuildstate".
+        Done Building Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vrsf3j\\cmTC_e9b2e.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.83
+        Time Elapsed 00:00:00.59
         
       exitCode: 0
   -
@@ -201,48 +201,48 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-kxjovv"
-      binary: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-kxjovv"
+      source: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7tg31v"
+      binary: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7tg31v"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-kxjovv'
+        Change Dir: 'D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7tg31v'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_12336.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2e1a7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.4.0+18d5aef85 for .NET Framework
-        Build started 14-04-2025 04:09:53.
-        Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kxjovv\\cmTC_12336.vcxproj" on node 1 (default targets).
+        Build started 14-04-2025 19:33:48.
+        Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7tg31v\\cmTC_2e1a7.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_12336.dir\\Debug\\".
-          Creating directory "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kxjovv\\Debug\\".
-          Creating directory "cmTC_12336.dir\\Debug\\cmTC_12336.tlog\\".
+          Creating directory "cmTC_2e1a7.dir\\Debug\\".
+          Creating directory "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7tg31v\\Debug\\".
+          Creating directory "cmTC_2e1a7.dir\\Debug\\cmTC_2e1a7.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_12336.dir\\Debug\\cmTC_12336.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_2e1a7.dir\\Debug\\cmTC_2e1a7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_12336.dir\\Debug\\\\" /Fd"cmTC_12336.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2e1a7.dir\\Debug\\\\" /Fd"cmTC_2e1a7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31933 for x64
           CMakeCXXCompilerABI.cpp
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_12336.dir\\Debug\\\\" /Fd"cmTC_12336.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2e1a7.dir\\Debug\\\\" /Fd"cmTC_2e1a7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kxjovv\\Debug\\cmTC_12336.exe" /INCREMENTAL /ILK:"cmTC_12336.dir\\Debug\\cmTC_12336.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-kxjovv/Debug/cmTC_12336.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-kxjovv/Debug/cmTC_12336.lib" /MACHINE:X64  /machine:x64 cmTC_12336.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_12336.vcxproj -> D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kxjovv\\Debug\\cmTC_12336.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7tg31v\\Debug\\cmTC_2e1a7.exe" /INCREMENTAL /ILK:"cmTC_2e1a7.dir\\Debug\\cmTC_2e1a7.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7tg31v/Debug/cmTC_2e1a7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-7tg31v/Debug/cmTC_2e1a7.lib" /MACHINE:X64  /machine:x64 cmTC_2e1a7.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_2e1a7.vcxproj -> D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7tg31v\\Debug\\cmTC_2e1a7.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_12336.dir\\Debug\\cmTC_12336.tlog\\unsuccessfulbuild".
-          Touching "cmTC_12336.dir\\Debug\\cmTC_12336.tlog\\cmTC_12336.lastbuildstate".
-        Done Building Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kxjovv\\cmTC_12336.vcxproj" (default targets).
+          Deleting file "cmTC_2e1a7.dir\\Debug\\cmTC_2e1a7.tlog\\unsuccessfulbuild".
+          Touching "cmTC_2e1a7.dir\\Debug\\cmTC_2e1a7.tlog\\cmTC_2e1a7.lastbuildstate".
+        Done Building Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7tg31v\\cmTC_2e1a7.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.85
+        Time Elapsed 00:00:00.62
         
       exitCode: 0
   -
@@ -273,4 +273,242 @@ events:
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.34.31933.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:161 (include)"
+      - "CMakeLists.txt:18 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-f43euq"
+      binary: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-f43euq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6;D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-f43euq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_77f46.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.0+18d5aef85 for .NET Framework
+        Build started 14-04-2025 19:33:49.
+        Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\cmTC_77f46.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_77f46.dir\\Debug\\".
+          Creating directory "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\Debug\\".
+          Creating directory "cmTC_77f46.dir\\Debug\\cmTC_77f46.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_77f46.dir\\Debug\\cmTC_77f46.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_77f46.dir\\Debug\\\\" /Fd"cmTC_77f46.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31933 for x64
+          src.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_77f46.dir\\Debug\\\\" /Fd"cmTC_77f46.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\src.c"
+        D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\cmTC_77f46.vcxproj]
+        Done Building Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\cmTC_77f46.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\cmTC_77f46.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f43euq\\cmTC_77f46.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.44
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:161 (include)"
+      - "CMakeLists.txt:18 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-125t8c"
+      binary: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-125t8c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6;D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-125t8c'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9d5fc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.0+18d5aef85 for .NET Framework
+        Build started 14-04-2025 19:33:50.
+        Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-125t8c\\cmTC_9d5fc.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_9d5fc.dir\\Debug\\".
+          Creating directory "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-125t8c\\Debug\\".
+          Creating directory "cmTC_9d5fc.dir\\Debug\\cmTC_9d5fc.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_9d5fc.dir\\Debug\\cmTC_9d5fc.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9d5fc.dir\\Debug\\\\" /Fd"cmTC_9d5fc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-125t8c\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31933 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9d5fc.dir\\Debug\\\\" /Fd"cmTC_9d5fc.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-125t8c\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-125t8c\\Debug\\cmTC_9d5fc.exe" /INCREMENTAL /ILK:"cmTC_9d5fc.dir\\Debug\\cmTC_9d5fc.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-125t8c/Debug/cmTC_9d5fc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-125t8c/Debug/cmTC_9d5fc.lib" /MACHINE:X64  /machine:x64 cmTC_9d5fc.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-125t8c\\cmTC_9d5fc.vcxproj]
+        Done Building Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-125t8c\\cmTC_9d5fc.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-125t8c\\cmTC_9d5fc.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-125t8c\\cmTC_9d5fc.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.49
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckLibraryExists.cmake:112 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:161 (include)"
+      - "CMakeLists.txt:18 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-nawbuk"
+      binary: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-nawbuk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6;D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-nawbuk'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_29a83.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.0+18d5aef85 for .NET Framework
+        Build started 14-04-2025 19:33:51.
+        Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nawbuk\\cmTC_29a83.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_29a83.dir\\Debug\\".
+          Creating directory "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nawbuk\\Debug\\".
+          Creating directory "cmTC_29a83.dir\\Debug\\cmTC_29a83.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_29a83.dir\\Debug\\cmTC_29a83.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_29a83.dir\\Debug\\\\" /Fd"cmTC_29a83.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nawbuk\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31933 for x64
+          CheckFunctionExists.c
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_29a83.dir\\Debug\\\\" /Fd"cmTC_29a83.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nawbuk\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nawbuk\\Debug\\cmTC_29a83.exe" /INCREMENTAL /ILK:"cmTC_29a83.dir\\Debug\\cmTC_29a83.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-nawbuk/Debug/cmTC_29a83.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-nawbuk/Debug/cmTC_29a83.lib" /MACHINE:X64  /machine:x64 cmTC_29a83.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nawbuk\\cmTC_29a83.vcxproj]
+        Done Building Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nawbuk\\cmTC_29a83.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nawbuk\\cmTC_29a83.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nawbuk\\cmTC_29a83.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:00.49
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:35 (_qt_internal_find_third_party_dependencies)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:42 (include)"
+      - "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:206 (find_package)"
+      - "CMakeLists.txt:18 (find_package)"
+    checks:
+      - "Performing Test HAVE_STDATOMIC"
+    directories:
+      source: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-3gbar9"
+      binary: "D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-3gbar9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6;D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;D:/Qt2/6.10.0/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "HAVE_STDATOMIC"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-3gbar9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_abefd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.4.0+18d5aef85 for .NET Framework
+        Build started 14-04-2025 19:33:52.
+        Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3gbar9\\cmTC_abefd.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_abefd.dir\\Debug\\".
+          Creating directory "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3gbar9\\Debug\\".
+          Creating directory "cmTC_abefd.dir\\Debug\\cmTC_abefd.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_abefd.dir\\Debug\\cmTC_abefd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_abefd.dir\\Debug\\\\" /Fd"cmTC_abefd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3gbar9\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31933 for x64
+          src.cxx
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /std:c++17 /Fo"cmTC_abefd.dir\\Debug\\\\" /Fd"cmTC_abefd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3gbar9\\src.cxx"
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.34.31933\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3gbar9\\Debug\\cmTC_abefd.exe" /INCREMENTAL /ILK:"cmTC_abefd.dir\\Debug\\cmTC_abefd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-3gbar9/Debug/cmTC_abefd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Mixar-Project/build/CMakeFiles/CMakeScratch/TryCompile-3gbar9/Debug/cmTC_abefd.lib" /MACHINE:X64  /machine:x64 cmTC_abefd.dir\\Debug\\src.obj
+          cmTC_abefd.vcxproj -> D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3gbar9\\Debug\\cmTC_abefd.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_abefd.dir\\Debug\\cmTC_abefd.tlog\\unsuccessfulbuild".
+          Touching "cmTC_abefd.dir\\Debug\\cmTC_abefd.tlog\\cmTC_abefd.lastbuildstate".
+        Done Building Project "D:\\Mixar-Project\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3gbar9\\cmTC_abefd.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.73
+        
+      exitCode: 0
 ...
