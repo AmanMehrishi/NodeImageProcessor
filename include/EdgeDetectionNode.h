@@ -31,6 +31,8 @@ class EdgeDetectionNode : public Node {
             sobelKernelSize = kernelSize;
         }
 
+        void setOverlay(bool flag){ overlayOnOriginal = flag;}
+
         virtual void process() override;
     
     private:
@@ -39,6 +41,7 @@ class EdgeDetectionNode : public Node {
         double lowerThreshold, upperThreshold;
         int apertureSize;
         int sobelKernelSize;
+        bool overlayOnOriginal;
     };
 
 #endif
