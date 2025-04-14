@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Mixar-Project\build\CMakeFiles\6761b12b469d53e0154f302e4f69aeff\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9210848E-5D3D-3E06-8D8D-CA89E0D060AE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
