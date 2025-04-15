@@ -1,34 +1,36 @@
 #ifndef NODEITEM_H
 #define NODEITEM_H
-
-#include <QGraphicsItem>
+#include <QGraphicsObject>
 #include <QString>
 #include <opencv2/opencv.hpp>
 #include <QPixmap>
-#include <QStyleOptionGraphicsItem>
 #include "Node.h"
-
-class NodeItem : public QGraphicsItem {
+class NodeEdge;
+class NodeItem : public QGraphicsObject {
+    Q_OBJECT
 public:
     NodeItem(const QString &title, QGraphicsItem *parent = nullptr);
-    
-    void setPreview(const cv::Mat &image);
-    void setTitle(const QString &title);
-
-    void setNode(Node *node) { m_node = node; }
-    Node* getNode() const { return m_node; }
-
-
-    QString getTitle() const { return m_title; }
-
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = nullptr) override;
-
+    void setPreview(const cv::Mat &image);
+    void setTitle(const QString &title);
+    QString getTitle() const;
+    void setNode(Node *node);
+    Node* getNode() const;
+    QPointF getInputPort() const;
+    QPointF getOutputPort() const;
+signals:
+    void connectionCreated(const QString &sourceId, const QString &targetId);
+protected:
+    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
+    void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override;
 private:
     QString m_title;
     QPixmap m_preview;
     bool m_hasPreview;
-    Node* m_node;
+    Node *m_node;
+    bool m_draggingEdge;
+    NodeEdge *m_tempEdge;
 };
-
-#endif 
+#endif

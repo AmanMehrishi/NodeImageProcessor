@@ -45,7 +45,20 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "brightnessChanged",
         "value",
         "contrastChanged",
-        "resetParameters"
+        "resetParameters",
+        "edgeAlgorithmChanged",
+        "index",
+        "lowerThresholdChanged",
+        "upperThresholdChanged",
+        "kernelSizeChanged",
+        "overlayChanged",
+        "checked",
+        "addInputNode",
+        "addBrightnessContrastNode",
+        "addEdgeDetectionNode",
+        "addOutputNode",
+        "updateAllNodePreviews",
+        "updateAllEdges"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -61,6 +74,38 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         }}),
         // Slot 'resetParameters'
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'edgeAlgorithmChanged'
+        QtMocHelpers::SlotData<void(int)>(7, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 8 },
+        }}),
+        // Slot 'lowerThresholdChanged'
+        QtMocHelpers::SlotData<void(int)>(9, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 4 },
+        }}),
+        // Slot 'upperThresholdChanged'
+        QtMocHelpers::SlotData<void(int)>(10, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 4 },
+        }}),
+        // Slot 'kernelSizeChanged'
+        QtMocHelpers::SlotData<void(int)>(11, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 4 },
+        }}),
+        // Slot 'overlayChanged'
+        QtMocHelpers::SlotData<void(bool)>(12, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Bool, 13 },
+        }}),
+        // Slot 'addInputNode'
+        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'addBrightnessContrastNode'
+        QtMocHelpers::SlotData<void()>(15, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'addEdgeDetectionNode'
+        QtMocHelpers::SlotData<void()>(16, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'addOutputNode'
+        QtMocHelpers::SlotData<void()>(17, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'updateAllNodePreviews'
+        QtMocHelpers::SlotData<void()>(18, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'updateAllEdges'
+        QtMocHelpers::SlotData<void()>(19, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -88,6 +133,17 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->brightnessChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 2: _t->contrastChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 3: _t->resetParameters(); break;
+        case 4: _t->edgeAlgorithmChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 5: _t->lowerThresholdChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 6: _t->upperThresholdChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 7: _t->kernelSizeChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 8: _t->overlayChanged((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 9: _t->addInputNode(); break;
+        case 10: _t->addBrightnessContrastNode(); break;
+        case 11: _t->addEdgeDetectionNode(); break;
+        case 12: _t->addOutputNode(); break;
+        case 13: _t->updateAllNodePreviews(); break;
+        case 14: _t->updateAllEdges(); break;
         default: ;
         }
     }
@@ -112,14 +168,14 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 15)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 15;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 15)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 15;
     }
     return _id;
 }

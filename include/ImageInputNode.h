@@ -12,7 +12,7 @@ class ImageInputNode : public Node {
 
         void setImagePath(const string& path) {imagePath = path;}
 
-        cv::Mat getOutput() const  {return output;}
+        cv::Mat getOutput() const override {return output;}
 
         virtual void process() override;
 

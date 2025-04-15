@@ -31,6 +31,9 @@
     <ClCompile Include="D:\Mixar-Project\src\NodeGraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Mixar-Project\src\NodeEdge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\Mixar-Project\build\NodeBasedImageProcessor_autogen\mocs_compilation_Release.cpp">
       <Filter>Source Files\Generated</Filter>
     </ClCompile>
@@ -42,6 +45,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="D:\Mixar-Project\include\NodeItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="D:\Mixar-Project\include\MainWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>

@@ -339,6 +339,12 @@
 			"MU",
 			"6YEA5652QU/moc_NodeGraph.cpp",
 			null
+		],
+		[
+			"D:/Mixar-Project/include/NodeItem.h",
+			"MU",
+			"6YEA5652QU/moc_NodeItem.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -498,6 +504,7 @@
 		[ "D:/Mixar-Project/src/EdgeDetectionNode.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/ImageInputNode.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/MainWindow.cpp", "MU", null ],
+		[ "D:/Mixar-Project/src/NodeEdge.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/NodeGraph.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/NodeItem.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/OutputNode.cpp", "MU", null ],

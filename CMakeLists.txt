@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.19)
 project(NodeBasedImageProcessor)
-
+set(CMAKE_AUTOMOC ON)   
 set(CMAKE_CXX_STANDARD 17)
 
 if (MSVC)
@@ -29,12 +29,14 @@ set(SOURCES
     ${CMAKE_SOURCE_DIR}/src/OutputNode.cpp
     ${CMAKE_SOURCE_DIR}/src/BlurNode.cpp
     ${CMAKE_SOURCE_DIR}/src/NodeItem.cpp
+    ${CMAKE_SOURCE_DIR}/include/NodeItem.h
     ${CMAKE_SOURCE_DIR}/src/NodeGraph.cpp
     ${CMAKE_SOURCE_DIR}/include/MainWindow.h
     ${CMAKE_SOURCE_DIR}/include/NodeGraph.h
+    ${CMAKE_SOURCE_DIR}/src/NodeEdge.cpp
 )
 
-qt_add_executable(${PROJECT_NAME} WIN32 ${SOURCES})
+qt_add_executable(${PROJECT_NAME} ${SOURCES})
 
 
 
