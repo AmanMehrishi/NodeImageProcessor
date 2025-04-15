@@ -281,6 +281,7 @@ void MainWindow::updatePropertiesPanel(){
         m_kernelSizeSlider->setVisible(false);
         m_overlayCheckBox->setVisible(false);
         m_resetButton->setVisible(false);
+
     } catch(const std::exception &ex){
         m_nodeNameLabel->setText(QString("Error: ") + ex.what());
     } catch(...){
@@ -312,60 +313,72 @@ void MainWindow::contrastChanged(int value){
         }
     }
 }
-void MainWindow::edgeAlgorithmChanged(int index){
+void MainWindow::edgeAlgorithmChanged(int index) {
     auto selectedItems = m_scene->selectedItems();
-    if(!selectedItems.isEmpty()){
-        if(auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())){
-            if(auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())){
-                if(index==0) edgeNode->setAlgorithm(EdgeDetectionAlgorithm::CANNY);
-                else edgeNode->setAlgorithm(EdgeDetectionAlgorithm::SOBEL);
+    if (!selectedItems.isEmpty()) {
+        if (auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())) {
+            if (auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())) {
+                if (index == 0) {
+                    edgeNode->setAlgorithm(EdgeDetectionAlgorithm::CANNY);
+                } else {
+                    edgeNode->setAlgorithm(EdgeDetectionAlgorithm::SOBEL);
+                }
                 edgeNode->process();
                 updateAllNodePreviews();
             }
         }
     }
 }
-void MainWindow::lowerThresholdChanged(int value){
+void MainWindow::lowerThresholdChanged(int value) {
     auto selectedItems = m_scene->selectedItems();
-    if(!selectedItems.isEmpty()){
-        if(auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())){
-            if(auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())){
-                edgeNode->setCannyParameters(value, edgeNode->getCannyUpperThreshold(), edgeNode->getCannyAperture());
+    if (!selectedItems.isEmpty()) {
+        if (auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())) {
+            if (auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())) {
+                // For Canny, update lower threshold
+                if (edgeNode->getAlgorithm() == EdgeDetectionAlgorithm::CANNY) {
+                    edgeNode->setCannyParameters(value, edgeNode->getCannyUpperThreshold(), edgeNode->getCannyAperture());
+                }
                 edgeNode->process();
                 updateAllNodePreviews();
             }
         }
     }
 }
-void MainWindow::upperThresholdChanged(int value){
+void MainWindow::upperThresholdChanged(int value) {
     auto selectedItems = m_scene->selectedItems();
-    if(!selectedItems.isEmpty()){
-        if(auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())){
-            if(auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())){
-                edgeNode->setCannyParameters(edgeNode->getCannyLowerThreshold(), value, edgeNode->getCannyAperture());
+    if (!selectedItems.isEmpty()) {
+        if (auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())) {
+            if (auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())) {
+                // For Canny, update upper threshold
+                if (edgeNode->getAlgorithm() == EdgeDetectionAlgorithm::CANNY) {
+                    edgeNode->setCannyParameters(edgeNode->getCannyLowerThreshold(), value, edgeNode->getCannyAperture());
+                }
                 edgeNode->process();
                 updateAllNodePreviews();
             }
         }
     }
 }
-void MainWindow::kernelSizeChanged(int value){
+void MainWindow::kernelSizeChanged(int value) {
     auto selectedItems = m_scene->selectedItems();
-    if(!selectedItems.isEmpty()){
-        if(auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())){
-            if(auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())){
-                edgeNode->setSobelParameters(value);
-                edgeNode->process();
-                updateAllNodePreviews();
+    if (!selectedItems.isEmpty()) {
+        if (auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())) {
+            if (auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())) {
+                // For Sobel, update kernel size
+                if (edgeNode->getAlgorithm() == EdgeDetectionAlgorithm::SOBEL) {
+                    edgeNode->setSobelParameters(value);
+                    edgeNode->process();
+                    updateAllNodePreviews();
+                }
             }
         }
     }
 }
-void MainWindow::overlayChanged(bool checked){
+void MainWindow::overlayChanged(bool checked) {
     auto selectedItems = m_scene->selectedItems();
-    if(!selectedItems.isEmpty()){
-        if(auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())){
-            if(auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())){
+    if (!selectedItems.isEmpty()) {
+        if (auto nodeItem = dynamic_cast<NodeItem*>(selectedItems.first())) {
+            if (auto edgeNode = dynamic_cast<EdgeDetectionNode*>(nodeItem->getNode())) {
                 edgeNode->setOverlay(checked);
                 edgeNode->process();
                 updateAllNodePreviews();
