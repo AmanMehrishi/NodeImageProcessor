@@ -565,6 +565,7 @@ D:/Mixar-Project/include/NodeItem.h
  mdp:D:/opencv/build/include/opencv2/video/tracking.hpp
  mdp:D:/opencv/build/include/opencv2/videoio.hpp
 D:/Mixar-Project/src/BrightnessContrastNode.cpp
+D:/Mixar-Project/src/BlendNode.cpp
 D:/Mixar-Project/src/BlurNode.cpp
 D:/Mixar-Project/src/MainWindow.cpp
 D:/Mixar-Project/src/EdgeDetectionNode.cpp
@@ -573,3 +574,7 @@ D:/Mixar-Project/src/NodeEdge.cpp
 D:/Mixar-Project/src/NodeGraph.cpp
 D:/Mixar-Project/src/NodeItem.cpp
 D:/Mixar-Project/src/main.cpp
+D:/Mixar-Project/src/ColorChannelSplitterNode.cpp
+D:/Mixar-Project/src/ConvolutionFilterNode.cpp
+D:/Mixar-Project/src/NoiseGenerationNode.cpp
+D:/Mixar-Project/src/ThresholdNode.cpp

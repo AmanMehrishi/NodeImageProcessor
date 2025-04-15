@@ -113,6 +113,7 @@
         "*.tcc": "cpp",
         "string_view": "cpp",
         "stdfloat": "cpp",
-        "qgraphicsview": "cpp"
+        "qgraphicsview": "cpp",
+        "qslider": "cpp"
     }
 }

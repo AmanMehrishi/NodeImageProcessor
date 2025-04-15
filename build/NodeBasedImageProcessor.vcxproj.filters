@@ -19,6 +19,21 @@
     <ClCompile Include="D:\Mixar-Project\src\EdgeDetectionNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\Mixar-Project\src\BlendNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Mixar-Project\src\ColorChannelSplitterNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Mixar-Project\src\ThresholdNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Mixar-Project\src\NoiseGenerationNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Mixar-Project\src\ConvolutionFilterNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\Mixar-Project\src\OutputNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

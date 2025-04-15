@@ -26,6 +26,11 @@ set(SOURCES
     ${CMAKE_SOURCE_DIR}/src/ImageInputNode.cpp
     ${CMAKE_SOURCE_DIR}/src/BrightnessContrastNode.cpp
     ${CMAKE_SOURCE_DIR}/src/EdgeDetectionNode.cpp
+    ${CMAKE_SOURCE_DIR}/src/BlendNode.cpp
+    ${CMAKE_SOURCE_DIR}/src/ColorChannelSplitterNode.cpp
+    ${CMAKE_SOURCE_DIR}/src/ThresholdNode.cpp
+    ${CMAKE_SOURCE_DIR}/src/NoiseGenerationNode.cpp
+    ${CMAKE_SOURCE_DIR}/src/ConvolutionFilterNode.cpp
     ${CMAKE_SOURCE_DIR}/src/OutputNode.cpp
     ${CMAKE_SOURCE_DIR}/src/BlurNode.cpp
     ${CMAKE_SOURCE_DIR}/src/NodeItem.cpp

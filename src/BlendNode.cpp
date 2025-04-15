@@ -1,11 +1,9 @@
 #include "BlendNode.h"
-#include <opencv2/core.hpp>
 #include <opencv2/imgproc.hpp>
-void BlendNode::setInput1(const cv::Mat &in) { input1 = in; }
-void BlendNode::setInput2(const cv::Mat &in) { input2 = in; }
+#include <opencv2/core.hpp>
 static cv::Mat blendNormal(const cv::Mat &A, const cv::Mat &B, double opacity) {
     cv::Mat res;
-    cv::addWeighted(A, opacity, B, 1.0 - opacity, 0, res);
+    cv::addWeighted(A, opacity, B, 1.0-opacity, 0, res);
     return res;
 }
 static cv::Mat blendMultiply(const cv::Mat &A, const cv::Mat &B, double opacity) {
@@ -24,7 +22,7 @@ static cv::Mat blendOverlay(const cv::Mat &A, const cv::Mat &B, double opacity) 
             for (int c = 0; c < A.channels(); c++){
                 uchar a = A.at<cv::Vec3b>(y,x)[c];
                 uchar b = B.at<cv::Vec3b>(y,x)[c];
-                float result = (a < 128) ? (2.0f * a * b / 255) : (255 - 2.0f * (255 - a) * (255 - b) / 255);
+                float result = (a < 128) ? (2.0f * a * b / 255.0f) : (255 - 2.0f * (255 - a) * (255 - b) / 255.0f);
                 overlay.at<cv::Vec3b>(y,x)[c] = static_cast<uchar>(result);
             }
         }
@@ -47,7 +45,7 @@ void BlendNode::process(){
         B = input2;
     }
     cv::Mat blended;
-    switch(mode) {
+    switch(mode){
         case BlendMode::NORMAL: blended = blendNormal(A, B, opacity); break;
         case BlendMode::MULTIPLY: blended = blendMultiply(A, B, opacity); break;
         case BlendMode::SCREEN: blended = blendScreen(A, B, opacity); break;

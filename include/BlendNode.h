@@ -6,10 +6,10 @@ enum class BlendMode { NORMAL, MULTIPLY, SCREEN, OVERLAY, DIFFERENCE };
 class BlendNode : public Node {
 public:
     BlendNode(const std::string &id) : Node(id), opacity(1.0), mode(BlendMode::NORMAL) {}
-    void setInput1(const cv::Mat &in);
-    void setInput2(const cv::Mat &in);
-    void process() override;
-    cv::Mat getOutput() const override { return output; }
+    void setInput1(const cv::Mat &in) { input1 = in; }
+    void setInput2(const cv::Mat &in) { input2 = in; }
+    virtual void process() override;
+    virtual cv::Mat getOutput() const override { return output; }
     void setOpacity(double op) { opacity = op; }
     double getOpacity() const { return opacity; }
     void setBlendMode(BlendMode m) { mode = m; }

@@ -499,15 +499,20 @@
 	"SETTINGS_FILE_Release" : "D:/Mixar-Project/build/CMakeFiles/NodeBasedImageProcessor_autogen.dir/AutogenUsed_Release.txt",
 	"SOURCES" : 
 	[
+		[ "D:/Mixar-Project/src/BlendNode.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/BlurNode.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/BrightnessContrastNode.cpp", "MU", null ],
+		[ "D:/Mixar-Project/src/ColorChannelSplitterNode.cpp", "MU", null ],
+		[ "D:/Mixar-Project/src/ConvolutionFilterNode.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/EdgeDetectionNode.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/ImageInputNode.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/MainWindow.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/NodeEdge.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/NodeGraph.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/NodeItem.cpp", "MU", null ],
+		[ "D:/Mixar-Project/src/NoiseGenerationNode.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/OutputNode.cpp", "MU", null ],
+		[ "D:/Mixar-Project/src/ThresholdNode.cpp", "MU", null ],
 		[ "D:/Mixar-Project/src/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

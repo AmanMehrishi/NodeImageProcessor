@@ -1,29 +1,17 @@
 #include "ColorChannelSplitterNode.h"
-#include <opencv2/opencv.hpp>
-#include <iostream>
-
+#include <opencv2/imgproc.hpp>
+#include <vector>
+using namespace std;
 void ColorChannelSplitterNode::process(){
-    if(input.empty()){
-        cerr<<"ColorChannelSplitterNode: No input image." <<endl;
-        return; 
-    }
+    if(input.empty()) return;
     vector<cv::Mat> channels;
     cv::split(input, channels);
-
-    vector<cv::Mat> channelImages;
-    for(auto& ch:channels)
-    {
-        if(!greyscale && input.channels() == 3)
-        {
-            cv::Mat color;
-            cv::cvtColor(ch, color, cv::COLOR_GRAY2BGR);
-            ch = color;
+    for(auto &ch : channels){
+        if(!grayscale){
+            cv::cvtColor(ch, ch, cv::COLOR_GRAY2BGR);
         }
     }
-    if(!channels.empty())
-    {
+    if(!channels.empty()){
         cv::hconcat(channels, output);
     }
-    
-    cout<<"ColorChannelSplit: Successfully split images into"<< channels.size() << " channels"<< endl;
 }
